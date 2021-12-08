@@ -11,31 +11,31 @@
     <section>
 
 
-     <script>
-
-         function sidebar(){
-      var sidebar =  document.getElementsByClassName(".collapse").style.width
-       console.log(sidebar)
-         }
-  
-     </script>
      <!-- navbar -->
-     <div>
-        <div class="navigation-bar responsive">
-            <div class="text-x-large nav-logo">Logo</div>
-            <div class="navigation-trigger">
-            <i class="fas fa-bars sidebar-trigger" onclick="sidebar()"></i>
-            </div>
-              <div class="padding collapse">
-                 <div class="link-wrapper">
-                  <a href="#" class="text-white">Home</a>
-                <a href="#services" class="text-white">Services</a>
-               <a href="#team" class="text-white">Team</a>
-               <a href="#contact" class="text-white">Contact</a>
-              </div>
+     <div class="fixed-top white card">
+    <div class="navigation-bar">
+        <div class="text-x-large nav-logo">Logo</div>
+          <div>
+             <div class="link-wrapper">
+              <a href="#" class="link text-black lato">Home</a>
+              <a href="#" class="link text-black lato">About</a>
           </div>
-         
-         </div>
+          <div class="sidebar-trigger"><i class="fas fa-bars text-indigo"></i></div>
+      </div>
+     </div>
+     <div class="sidebar black">
+     <div class="text-right padding">
+         <span class="close-sidebar text-xx-large text-white pointer">
+             &times;
+         </span>
+     </div>
+     <div class="padding">
+         <div class="text-center padding"><a href="#" class="link text-white">Link One</a></div>
+         <div class="text-center padding"><a href="#" class="link text-white">Link Two</a></div>
+         <div class="text-center padding"><a href="#" class="link text-white">Link Three</a></div>
+         <div class="text-center padding"><a href="#" class="link text-white">Link Four</a></div>
+     </div>
+     </div>
        </div>
          <!-- slideshow -->
         <div class="slider three black-overlay" id='#'>
@@ -44,11 +44,11 @@
 
                 <div class="slide">
                     <div class="slide-content height-500">
-                    <img src="img/7.jpg"/>
+                    <img class="slide-image" src="img/7.jpg"/>
                  <div class="caption center padding-20 text-center">
                      <div class="text-big text-white">Greate Company</div>
                      <div class="text-white">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iste suscipit dolorum, blanditiis dolore a vitae rerum repellat, culpa voluptas quae eligendi,
+                      iste suscipit dolorum, blanditiis dolore a vitae rerum repellat, culpa voluptas quae eligendi,
                      </div>
                  </div>
                     </div>
@@ -56,22 +56,22 @@
                 </div>
                 <div class="slide">
                     <div class="slide-content height-500">
-                    <img src="img/5.jpg"/>
+                    <img class="slide-image" src="img/5.jpg"/>
                     <div class="caption bottom-left padding">
                      <div class="text-big text-white">Choose from Templates</div>
                      <div class="text-white">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iste suscipit dolorum, blanditiis dolore a vitae rerum repellat, culpa voluptas quae eligendi,
+                      iste suscipit dolorum, blanditiis dolore a vitae rerum repellat, culpa voluptas quae eligendi,
                      </div>
                  </div>
                     </div>
                 </div>
                 <div class="slide">
                 <div class="slide-content height-500">
-                <img src="img/9.jpg"/>
+                <img class="slide-image" src="img/9.jpg"/>
                 <div class="caption center padding-20 text-center">
                      <div class="text-big text-white">Create Your Website</div>
                      <div class="text-white">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iste suscipit dolorum, blanditiis dolore a vitae rerum repellat, culpa voluptas quae eligendi,
+                      iste suscipit dolorum, blanditiis dolore a vitae rerum repellat, culpa voluptas quae eligendi,
                      </div>
                 </div>
                 </div>
@@ -263,19 +263,32 @@
 
         </div>
 
-        <footer class="padding light">
+        <div class="hr section"></div>
+        <footer class="padding ">
             <div class="row">
-                <div class="col sm-12 md-6 lg-6 padding">
+                <div class="col sm-12 md-5 lg-5 padding">
                  <div class="h2">Logo</div>
+                 <div class="text-small">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tempore quis voluptates.
+                 </div>
                  <div>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tempore quis voluptates. Sunt, dolores. Optio illum alias at, quis voluptatum, magnam doloribus aliquid, sint explicabo impedit voluptate debitis nam velit.
+                    <i class="inline-block margin text-indigo pointer scale-up fab fa-facebook"></i>
+                    <i class="inline-block margin text-indigo pointer scale-up fab fa-instagram"></i>
+                    <i class="inline-block margin text-indigo pointer scale-up fab fa-twitter"></i>
                  </div>
                 </div>
-                <div class="col sm-12 md-6 lg-6 padding">
+                <div class="col sm-12 md-2 lg-2 padding">
+                 <div>Useful Links</div>
+                 <a href="#" class="block">Link One</a>
+                 <a href="#" class="block">Link two</a>
+                 <a href="#" class="block">Link Three</a>
+                 <a href="#" class="block">Link Four</a>
+                </div>
+                <div class="col sm-12 md-5 lg-5 padding">
                     <div class="h3">Subscribe To Our News Letter</div>
                     <input class="input full-width padding bordered" placeholder="Your email" /> 
-                    <div class="padding-top">
-                        Powered by <a href="">Funcss</a>
+                    <div>
+                        <button class="button indigo text-white section card">Send <i class="fas fa-paper-plane"></i></button>
                     </div>
                 </div>
           
@@ -283,5 +296,7 @@
             </div>
         </footer>
     </section>
+
+    <script src="js/fun.js"></script>
 </body>
 </html>
